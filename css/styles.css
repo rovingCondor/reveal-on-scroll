@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+    color: white;
+}
+
+section {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+section .reveal {
+    margin: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(5rem);
+    
+    transition: all 750ms ease-in;
+}
+
+section .reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+section .box {
+    width: 50%;
+    background-color: skyblue;
+    color: white;
+
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+section p {
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+}
+
+footer {
+    height: 200px;
+    background-color: black;
+}
+
